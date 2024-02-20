@@ -102,7 +102,7 @@ Any bug reports, feature requests, suggestions, etc. welcome!
 
 * License
 
-GPLv3
+[[LICENSE][GPLv3]]
 
 # Local Variables:
 # eval: (require 'org-make-toc)
