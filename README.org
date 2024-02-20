@@ -83,8 +83,7 @@ buffer containing links to the selected nodes.
 
 ** Tips
 
-+ You can customize whether the exported buffer is read-only using the 
-=embark-org-roam-readonly= variable.
++ You can customize whether the exported buffer is read-only using the =embark-org-roam-readonly= variable.
 
 * Changelog
 :PROPERTIES:

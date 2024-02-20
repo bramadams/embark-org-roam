@@ -76,7 +76,7 @@
 ;;;; Tips
 
 ;; + You can customize whether the exported buffer is read-only using
-;; the `embark-org-roam-readonly' variable.
+;;   the `embark-org-roam-readonly' variable.
 
 ;;;; Credits
 
