@@ -1,0 +1,117 @@
+#+TITLE: embark-org-roam
+
+#+PROPERTY: LOGGING nil
+
+# Note: This readme works with the org-make-toc <https://github.com/alphapapa/org-make-toc> package, which automatically updates the table of contents.
+
+This package provides an embark export buffer for org roam nodes.
+
+* Screenshots
+
+The first screenshot shows a read-only version of the org roam export buffer,
+while the second screenshot shows a read-write (checklist) version of the 
+buffer.
+
+[[screenshot1.png]]
+
+[[screenshot1.png]]
+
+* Contents                                                         :noexport:
+:PROPERTIES:
+:TOC:      :include siblings
+:END:
+:CONTENTS:
+
+:END:
+
+* Installation
+:PROPERTIES:
+:TOC:      :depth 0
+:END:
+
+** Manual
+
+  Install these required packages:
+
+  + =embark=
+  + =org-roam=
+
+  Then put this file in your load-path, and put this in your init file:
+
+  #+BEGIN_SRC elisp
+(require 'embark-org-roam)
+  #+END_SRC
+
+** Straight
+
+  Put this in your init file:
+
+#+begin_src elisp
+(use-package embark-org-roam
+   :ensure t
+   :straight (embark-org-roam
+              :type git
+              :host github
+              :repo "bramadams/embark-org-roam")
+   :after (org-roam embark)
+   :demand t)
+#+end_src
+
+** Elpaca
+
+  Put this in your init file:
+
+#+begin_src elisp
+(use-package embark-org-roam
+   :ensure t
+   :elpaca (embark-org-roam
+            :type git
+            :host github
+            :repo "bramadams/embark-org-roam")
+   :after (org-roam embark)
+   :demand t)
+#+end_src
+
+* Usage
+:PROPERTIES:
+:TOC:      :depth 0
+:END:
+
+Use =embark-select= to select all org roam nodes of interest,
+then use =embark-export=, which will open a special org mode
+buffer containing links to the selected nodes.
+
+** Tips
+
++ You can customize whether the exported buffer is read-only in the =embark-org-roam= group.
+
+* Changelog
+:PROPERTIES:
+:TOC:      :depth 0
+:END:
+
+** 0.1
+
+Initial release.
+
+* Credits
+
+This package would not have been possible without the following
+magnificent packages: [[https://github.com/org-roam/org-roam][org-roam]] and [[https://github.com/oantolin/embark][embark]]. Also a big
+thanks to alphapapa for their [[https://github.com/alphapapa/emacs-package-dev-handbook ][Emacs package development
+handbook]]!
+
+* Development
+
+Any bug reports, feature requests, suggestions, etc. welcome!
+
+* License
+
+GPLv3
+
+# Local Variables:
+# eval: (require 'org-make-toc)
+# before-save-hook: org-make-toc
+# org-export-with-properties: ()
+# org-export-with-title: t
+# End:
