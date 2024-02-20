@@ -13,8 +13,10 @@ a checklist, allowing to check off items as you are processing them.
 * Screenshots
 
 The [[screenshot1.png][first screenshot]] shows a checklist version of the org roam 
-export buffer, while the [[screenshot1.png][second screenshot]] shows a read-only version of the 
-buffer.
+export buffer, while the [[screenshot1.png][second screenshot]] shows a read-only version
+of the buffer. These buffers were obtained by searching org roam nodes for entries matching 
+the term "python", then =embark-select=-ing the org roam nodes of interest, followed by 
+=embark-export=.
 
 #+html: <p align="center"><img src="screenshot1.png" width="90%"/></p>
 #+html: <p align="center"><img src="screenshot2.png" width="90%"/></p>
