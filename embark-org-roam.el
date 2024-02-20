@@ -3,7 +3,7 @@
 ;; Copyright (C) 2024 Bram Adams
 
 ;; Author: Bram Adams <bram.adams@queensu.ca>
-;; URL: https://github.com/bramadams/embark-org-roam/embark-org-roam.el
+;; URL: https://github.com/bramadams/embark-org-roam/blob/main/embark-org-roam.el
 ;; Version: 0.1
 ;; Package-Requires: ((emacs "27.0"))
 ;; Keywords: embark export org roam
@@ -75,8 +75,8 @@
 
 ;;;; Tips
 
-;; + You can customize whether the exported is read-only in the
-;; `embark-org-roam' group.
+;; + You can customize whether the exported buffer is read-only in
+;; the `embark-org-roam' group.
 
 ;;;; Credits
 
@@ -98,7 +98,7 @@
 
 (defgroup embark-org-roam nil
   "Settings for `embark-org-roam'."
-  :link '(url-link "https://github.com/bramadams/embark-org-roam/embark-org-roam.el"))
+  :link '(url-link "https://github.com/bramadams/embark-org-roam/blob/main/embark-org-roam.el"))
 
 (defcustom embark-org-roam-readonly nil
   "When `nil', the export buffer contains a checklist of LINKS to,
