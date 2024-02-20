@@ -8,13 +8,13 @@ This package provides an embark export buffer for org roam nodes.
 
 * Screenshots
 
-The first screenshot shows a read-only version of the org roam export buffer,
-while the second screenshot shows a read-write (checklist) version of the 
+The first screenshot shows a read-write (checklist) version of the org roam 
+export buffer, while the second screenshot shows a read-only version of the 
 buffer.
 
-[[screenshot1.png]]
+[[screenshot1.png][checklist version of the org roam export buffer]]
 
-[[screenshot1.png]]
+[[screenshot2.png][readonly version of the org roam export buffer]]
 
 * Contents                                                         :noexport:
 :PROPERTIES:
