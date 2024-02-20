@@ -81,10 +81,13 @@
 ;;;; Credits
 
 ;; This package would not have been possible without the following
-;; magnificent packages: org-roam [1] and embark [2].
+;; magnificent packages: org-roam [1] and embark [2]. Also a big
+;; thanks to alphapapa for their Emacs package development
+;; handbook [3]!
 ;;
 ;;  [1] https://github.com/org-roam/org-roam
 ;;  [2] https://github.com/oantolin/embark
+;;  [3] https://github.com/alphapapa/emacs-package-dev-handbook 
 
 ;;; Code:
 
