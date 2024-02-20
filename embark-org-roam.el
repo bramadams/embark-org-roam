@@ -5,7 +5,7 @@
 ;; Author: Bram Adams <bram.adams@queensu.ca>
 ;; URL: https://github.com/bramadams/embark-org-roam/blob/main/embark-org-roam.el
 ;; Version: 0.1
-;; Package-Requires: ((emacs "27.0"))
+;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: embark export org roam
 
 ;; This file is not part of GNU Emacs.
