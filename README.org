@@ -16,7 +16,8 @@ The [[screenshot1.png][first screenshot]] shows a checklist version of the org r
 export buffer, while the [[screenshot1.png][second screenshot]] shows a read-only version of the 
 buffer.
 
-#+html: <p align="center"><table style="border: none; border-collapse: collapse;"><tr style="border: none;"><td style="border: none;"><img src="screenshot1.png" width="45%"/><img src="screenshot2.png" width="45%"/></td></tr></table></p>
+#+html: <p align="center"><img src="screenshot1.png" width="90%"/></p>
+#+html: <p align="center"><img src="screenshot2.png" width="90%"/></p>
 
 * Contents                                                         :noexport:
 :PROPERTIES:
