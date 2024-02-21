@@ -21,6 +21,19 @@ the term "python", then =embark-select=-ing the org roam nodes of interest, foll
 #+html: <p align="center"><img src="screenshot1.png" width="90%"/></p>
 #+html: <p align="center"><img src="screenshot2.png" width="90%"/></p>
 
+* Contents                                                         :noexport:
+:PROPERTIES:
+:TOC:      :include siblings
+:END:
+:CONTENTS:
+- [[#installation][Installation]]
+- [[#usage][Usage]]
+- [[#changelog][Changelog]]
+- [[#credits][Credits]]
+- [[#development][Development]]
+- [[#license][License]]
+:END:
+
 * Installation
 :PROPERTIES:
 :TOC:      :depth 0
