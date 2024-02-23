@@ -3,10 +3,10 @@
 ;; Copyright (C) 2024 Bram Adams
 
 ;; Author: Bram Adams <bram.adams@queensu.ca>
-;; URL: https://github.com/bramadams/embark-org-roam/blob/main/embark-org-roam.el
-;; Version: 0.1
+;; URL: https://github.com/bramadams/embark-org-roam
+;; Version: 0.2
 ;; Package-Requires: ((emacs "27.1"))
-;; Keywords: embark export org roam
+;; Keywords: outlines hypermedia
 
 ;; This file is not part of GNU Emacs.
 
@@ -81,13 +81,13 @@
 ;;;; Credits
 
 ;; This package would not have been possible without the following
-;; magnificent packages: org-roam [1] and embark [2]. Also a big
+;; magnificent packages: org-roam [1] and embark [2].  Also a big
 ;; thanks to alphapapa for their Emacs package development
 ;; handbook [3]!
 ;;
 ;;  [1] https://github.com/org-roam/org-roam
 ;;  [2] https://github.com/oantolin/embark
-;;  [3] https://github.com/alphapapa/emacs-package-dev-handbook 
+;;  [3] https://github.com/alphapapa/emacs-package-dev-handbook
 
 ;;; Code:
 
@@ -101,18 +101,30 @@
 
 (defgroup embark-org-roam nil
   "Settings for `embark-org-roam'."
-  :link '(url-link "https://github.com/bramadams/embark-org-roam/blob/main/embark-org-roam.el"))
+  :group 'emacs
+  :link '(url-link
+          "https://github.com/bramadams/embark-org-roam/blob/main/embark-org-roam.el"))
 
 (defcustom embark-org-roam-readonly nil
-  "When `nil', the export buffer contains a checklist of LINKS to,
+  "Whether the export buffer should be readonly.
+
+When nil, the export buffer contains a checklist of LINKS to
 org roam nodes, otherwise just a regular list of LINKS."
   :type 'boolean)
 
 
 ;;;; Public Functions
 
-(defun embark-export-org-roam (nodes)
-  "Create an org mode buffer listing LINKS to the provided nodes of
+(define-obsolete-function-alias
+  'embark-export-org-roam
+  'embark-org-roam-export
+  "0.2"
+  "Fixing discouraged naming of public function.")
+
+(defun embark-org-roam-export (nodes)
+  "Exporting selected org roam NODES to an org mode buffer.
+
+Creates an org mode buffer listing LINKS to the provided nodes of
 category `org-roam-node'."
   (let ((buf (generate-new-buffer "*Embark Export Org Roam*")))
     (with-current-buffer buf
@@ -128,8 +140,7 @@ category `org-roam-node'."
                (description (org-roam-node-formatted node)))
           (if (not embark-org-roam-readonly)
               (insert "1. [ ] ")
-            (insert "1. ")
-            )
+            (insert "1. "))
           (insert (org-link-make-string
                    (concat "id:" id)
                    description))
@@ -139,16 +150,16 @@ category `org-roam-node'."
           (insert "\n")))
       (goto-char (point-min))
       (unless embark-org-roam-readonly
-          (org-update-statistics-cookies 4))
+        (org-update-statistics-cookies 4))
       (org-mode)
       (if embark-org-roam-readonly
-        (read-only-mode)))
+          (read-only-mode)))
     (pop-to-buffer buf)))
 
 
 ;; register as exporter for org roam nodes
 (setf (alist-get 'org-roam-node embark-exporters-alist)
-      #'embark-export-org-roam)
+      #'embark-org-roam-export)
 
 
 ;;;; Footer
