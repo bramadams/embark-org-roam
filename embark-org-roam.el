@@ -116,7 +116,7 @@ org roam nodes, otherwise just a regular list of LINKS."
 ;;;; Public Functions
 
 (define-obsolete-function-alias
-  #'embark-export-org-roam
+  'embark-export-org-roam
   #'embark-org-roam-export
   "0.2"
   "Fixing discouraged naming of public function.")
