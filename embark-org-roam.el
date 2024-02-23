@@ -5,7 +5,7 @@
 ;; Author: Bram Adams <bram.adams@queensu.ca>
 ;; URL: https://github.com/bramadams/embark-org-roam
 ;; Version: 0.2
-;; Package-Requires: ((emacs "27.1"))
+;; Package-Requires: ((emacs "27.1") (embark "0.23") (org-roam "2.2.0"))
 ;; Keywords: outlines hypermedia
 
 ;; This file is not part of GNU Emacs.
@@ -116,8 +116,8 @@ org roam nodes, otherwise just a regular list of LINKS."
 ;;;; Public Functions
 
 (define-obsolete-function-alias
-  'embark-export-org-roam
-  'embark-org-roam-export
+  #'embark-export-org-roam
+  #'embark-org-roam-export
   "0.2"
   "Fixing discouraged naming of public function.")
 
