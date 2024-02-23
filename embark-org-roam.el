@@ -101,7 +101,7 @@
 
 (defgroup embark-org-roam nil
   "Settings for `embark-org-roam'."
-  :group 'emacs
+  :group 'org-roam
   :link '(url-link
           "https://github.com/bramadams/embark-org-roam/blob/main/embark-org-roam.el"))
 
