@@ -1,5 +1,5 @@
 #+TITLE: embark-org-roam
-#+HTML: <p><img src="https://github.com/bramadams/embark-org-roam/actions/workflows/melpazoid.yml/badge.svg"/><img src="https://melpa.org/packages/embark-org-roam-badge.svg"/><img src="https://stable.melpa.org/packages/embark-org-roam-badge.svg"/></p>
+#+HTML: <p><a href="https://github.com/bramadams/embark-org-roam/actions"><img src="https://github.com/bramadams/embark-org-roam/actions/workflows/melpazoid.yml/badge.svg"/></a><a href="https://melpa.org/#/embark-org-roam"><img src="https://melpa.org/packages/embark-org-roam-badge.svg"/></a><a href="https://stable.melpa.org/#/embark-org-roam"><img src="https://stable.melpa.org/packages/embark-org-roam-badge.svg"/></a></p>
 
 #+PROPERTY: LOGGING nil
 
