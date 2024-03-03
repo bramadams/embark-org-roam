@@ -105,6 +105,10 @@ buffer is _not_ read-only, resulting in an org-mode checklist.
 :TOC:      :depth 0
 :END:
 
+** 0.2
+
+MELPA-reviewed release.
+
 ** 0.1
 
 Initial release.
