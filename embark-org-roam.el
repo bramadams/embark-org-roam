@@ -51,6 +51,10 @@
 
 ;;; Installation:
 
+;;;;; MELPA
+
+;; If you installed from MELPA, you're done.
+
 ;;;;; Manual
 
 ;; Install these required packages:

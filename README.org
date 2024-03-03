@@ -1,5 +1,6 @@
 #+TITLE: embark-org-roam
 #+HTML: <img src="https://github.com/bramadams/embark-org-roam/actions/workflows/melpazoid.yml/badge.svg"/>
+[![MELPA](https://melpa.org/packages/embark-org-roam-badge.svg)](https://melpa.org/#/embark-org-roam) [![MELPA Stable](https://stable.melpa.org/packages/embark-org-roam-badge.svg)](https://stable.melpa.org/#/embark-org-roam)
 
 #+PROPERTY: LOGGING nil
 
@@ -39,6 +40,10 @@ the term "python", then =embark-select=-ing the org roam nodes of interest, foll
 :PROPERTIES:
 :TOC:      :depth 0
 :END:
+
+** MELPA
+
+If you installed from MELPA, you're done.  Just run one of the commands below.
 
 ** Manual
 
