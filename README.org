@@ -42,7 +42,7 @@ the term "python", then =embark-select=-ing the org roam nodes of interest, foll
 
 ** MELPA
 
-If you installed from MELPA, you're done.  Just run one of the commands below.
+Just browse MELPA packages using, for instance, =M-x package-list-packages=, and search for =embark-org-roam=. To set up access to the MELPA and/or MELPA Stable repositories, see [[https://github.com/melpa/melpa/?tab=readme-ov-file#usage][these instructions]].
 
 ** Manual
 
